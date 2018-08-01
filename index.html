@@ -4,44 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>111</title>
-    <style>
-        .share_div{width:0px;height:0px;overflow:hidden;}
-    </style>
-    <div class="share_div"><img src="/1.png"  /></div>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="页面标题">
+    <meta property="og:description" content="页面描述">
+    <meta property="og:image" content="http://mail.wzybnzy.cn/1.png">
+    <meta property="og:url" content="http://mail.wzybnzy.cn">
+    <title>2</title>
 </head>
+<div style="display:none;"><img src="http://mail.wzybnzy.cn/1.png" alt=""></div>
 <body>
-    hello
+    hellos
 </body>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script>
-	wx.config({
-		debug: false,
-		appId: 'wxfb95e4025a5d4614',
-		timestamp: '1498633007',
-		nonceStr: 'tnZJBsdrUo88MFiB',
-		signature: 'cae67a0a883822e1087cba091321b14b73152210',
-		jsApiList: [
-			'onMenuShareTimeline',
-			'onMenuShareAppMessage'
-		  ]
-	});
-	wx.ready(function () {
-		var shareData = {
-			title: '马富天博客_PHP博客_PHP Blog_PHP编程_分享PHP开发经验',	//	标题
-			desc: '马富天博客是个人独立博客专为学习php打造php教程技术,在马富天博客里可以找到你所需要的所有关于php技术解决文章方案,打造一个以技术经验为主题的分享平台!QQ:335134463',	//	描述
-			link: 'http://www.mafutian.net/',	//	分享的URL，必须和当前打开的网页的URL是一样的
-			imgUrl: 'http://www.mafutian.net/logo.jpg'	//	缩略图地址
-		};
-		wx.onMenuShareAppMessage(shareData);
-		wx.onMenuShareTimeline(shareData);
-	});
-	wx.error(function (res) {
-	  //alert(res.errMsg);//错误提示
-	});
-</script>
-<script>
-
-</script>
 </html>
